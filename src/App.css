@@ -1,6 +1,6 @@
 body {
   color: green;
-  font-size: 20px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -59,5 +59,35 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: #fc63b5;
+  }
+
+  .btn {
+    font-size: 45px;
+    border-radius: 25px;
+    color: #0b63f6;
+    transition: 0.2s linear;
+    background: #b7c9e7;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 25px;
+    background-color: floralwhite;
+    color: darkorchid;
+  }
+
+  .btn {
+    font-size: 45px;
+    border-radius: 25px;
+    color: #0b63f6;
   }
 }
