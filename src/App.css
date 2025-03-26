@@ -17,6 +17,30 @@ body {
   margin-bottom: 10px;
 }
 
+.greet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.most {
+  width: 100%;
+}
+
+.info {
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.review {
+  box-sizing: border-box;
+  padding: 30px;
+  text-align: center;
+}
+
 .btn:hover {
   box-shadow: 2px 2px white, 4px 4px #fc63b5;
   top: -4px;
@@ -90,4 +114,10 @@ body {
     border-radius: 25px;
     color: #0b63f6;
   }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1200px) {
 }
