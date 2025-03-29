@@ -100,6 +100,12 @@ body {
     color: #0b63f6;
     transition: 0.2s linear;
     background: #b7c9e7;
+    margin: 10px;
+  }
+
+  .butRow {
+    display: flex;
+    justify-content: center;
   }
 
   .info {

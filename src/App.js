@@ -6,7 +6,7 @@ class App extends Component {
     sports: [
       {
         title: "Swimmimg",
-        body: "Swimming is an individual or team racing sport that requires the use of one's entire body to move through the water.",
+        body: "Swimming is an individual or team racing sport that requires the use of one's entire body to move through the water. The sport takes place in pools or open water (e.g., in a sea or lake). Competitive swimming is one of the most popular Olympic sports, with varied distance events in butterfly, backstroke, breaststroke, freestyle, and individual medley.",
         id: 1,
       },
       {
@@ -55,58 +55,60 @@ const Sport = () => {
   return (
     <div>
       <h1 className="big">What kind of sport is your favourite?</h1>
-      <input
-        class="btn"
-        type="button"
-        value="swim"
-        onClick={() => {
-          alert("Swimming is really good for health! Nice shoice!");
-          viewDiv();
-        }}
-      />
-      <br />
+      <div class="butRow">
+        <input
+          class="btn"
+          type="button"
+          value="swim"
+          onClick={() => {
+            alert("Swimming is really good for health! Nice shoice!");
+            viewDiv();
+          }}
+        />
+        <br />
 
-      <input
-        class="btn"
-        type="button"
-        value="soccer"
-        onClick={() => {
-          alert("Soccer! You need to run fast.  Nice shoice!");
-          viewDiv();
-        }}
-      />
+        <input
+          class="btn"
+          type="button"
+          value="soccer"
+          onClick={() => {
+            alert("Soccer! You need to run fast.  Nice shoice!");
+            viewDiv();
+          }}
+        />
 
-      <br />
-      <input
-        class="btn"
-        type="button"
-        value="backetball"
-        onClick={() => {
-          alert("Basketball is for tall persons. Nice shoice!");
-          viewDiv();
-        }}
-      />
-      <br />
-      <input
-        class="btn"
-        type="button"
-        value="martial arts"
-        onClick={() => {
-          alert("Martial Arts gives you confidence. Nice shoice!");
-          viewDiv();
-        }}
-      />
-      <br />
-      <input
-        class="btn"
-        type="button"
-        value="other"
-        onClick={(e) => {
-          prompt("What is your favorite sport?");
-          alert("Nice choice!");
-          // <AddSport id=1 />;
-        }}
-      />
+        <br />
+        <input
+          class="btn"
+          type="button"
+          value="backetball"
+          onClick={() => {
+            alert("Basketball is for tall persons. Nice shoice!");
+            viewDiv();
+          }}
+        />
+        <br />
+        <input
+          class="btn"
+          type="button"
+          value="martial arts"
+          onClick={() => {
+            alert("Martial Arts gives you confidence. Nice shoice!");
+            viewDiv();
+          }}
+        />
+        <br />
+        <input
+          class="btn"
+          type="button"
+          value="other"
+          onClick={(e) => {
+            prompt("What is your favorite sport?");
+            alert("Nice choice!");
+            // <AddSport id=1 />;
+          }}
+        />
+      </div>
     </div>
   );
 };
